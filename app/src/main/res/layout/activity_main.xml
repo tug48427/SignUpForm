@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormActivity">
+
+    <TextView
+        android:id="@+id/TitleTextView"
+        android:layout_width="258dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="76dp"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="15pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="255dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="76dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:labelFor="@id/userName"
+        app:layout_constraintEnd_toEndOf="@+id/email"
+        app:layout_constraintStart_toStartOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/TitleTextView" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="255dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/conPass"
+        app:layout_constraintStart_toStartOf="@+id/conPass"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="255dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:labelFor="@id/email"
+        app:layout_constraintEnd_toEndOf="@+id/pass"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/pass"
+        app:layout_constraintTop_toBottomOf="@+id/userName" />
+
+    <TextView
+        android:id="@+id/NameTextView"
+        android:layout_width="85dp"
+        android:layout_height="32dp"
+
+        android:layout_marginTop="88dp"
+        android:text="@string/NameView"
+        android:textAlignment="center"
+        android:textSize="10pt"
+        app:layout_constraintEnd_toEndOf="@+id/EmailTextView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/EmailTextView"
+        app:layout_constraintTop_toBottomOf="@+id/TitleTextView" />
+
+    <TextView
+        android:id="@+id/PasswordTextView"
+        android:layout_width="103dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="42dp"
+        android:labelFor="@id/pass"
+        android:text="@string/passView"
+        android:textAlignment="center"
+        android:textSize="10pt"
+        app:layout_constraintEnd_toEndOf="@+id/ConPasswordTextView"
+        app:layout_constraintStart_toStartOf="@+id/ConPasswordTextView"
+        app:layout_constraintTop_toBottomOf="@+id/EmailTextView" />
+
+    <TextView
+        android:id="@+id/ConPasswordTextView"
+        android:layout_width="99dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="42dp"
+        android:text="@string/conPassView"
+        android:textAlignment="center"
+        android:textSize="8pt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PasswordTextView" />
+
+    <TextView
+        android:id="@+id/EmailTextView"
+        android:layout_width="76dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="42dp"
+        android:text="@string/emailView"
+        android:textAlignment="center"
+        android:textSize="10pt"
+        app:layout_constraintEnd_toEndOf="@+id/PasswordTextView"
+        app:layout_constraintStart_toStartOf="@+id/PasswordTextView"
+        app:layout_constraintTop_toBottomOf="@+id/NameTextView" />
+
+    <EditText
+        android:id="@+id/conPass"
+        android:layout_width="255dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="26dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:labelFor="@id/conPass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pass" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="84dp"
+        android:text="@string/saveButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
