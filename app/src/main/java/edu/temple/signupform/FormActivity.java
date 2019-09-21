@@ -49,7 +49,7 @@ public class FormActivity extends AppCompatActivity {
                 }
                 else{
                     Toast.makeText(FormActivity.this,"Welcome, "+getUName+", to the SignUpForm App"
-                            ,Toast.LENGTH_SHORT).show();
+                            ,Toast.LENGTH_LONG).show();
 
                 }
 
