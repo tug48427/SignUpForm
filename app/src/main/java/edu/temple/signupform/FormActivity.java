@@ -32,20 +32,13 @@ public class FormActivity extends AppCompatActivity {
                 String getEmail = email.getText().toString();
                 String getPass = password.getText().toString();
                 String getConPass = conPassword.getText().toString();
-                if (getUName.equals("")){
-                    Toast.makeText(FormActivity.this,"Missing Username",Toast.LENGTH_SHORT).show();
-                }
-                else if (getEmail.equals("")){
-                    Toast.makeText(FormActivity.this,"Missing Email",Toast.LENGTH_SHORT).show();
-                }else if (getPass.equals("")){
-                    Toast.makeText(FormActivity.this,"Missing Password",Toast.LENGTH_SHORT).show();
-                }else if (getConPass.equals("")){
-                    Toast.makeText(FormActivity.this,"Missing Confirm Password",Toast.LENGTH_SHORT).show();
+                if (getUName.equals("") || getEmail.equals("") || getPass.equals("")||getConPass.equals("")){
+                    Toast.makeText(FormActivity.this,"Please fill out all the fields",Toast.LENGTH_SHORT).show();
                 }
 
 
                 else if(getPass.equals(getConPass)==false){
-                    Toast.makeText(FormActivity.this,"Missing Confirm Password",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(FormActivity.this,"Passwords do not match",Toast.LENGTH_SHORT).show();
                 }
                 else{
                     Toast.makeText(FormActivity.this,"Welcome, "+getUName+", to the SignUpForm App"
